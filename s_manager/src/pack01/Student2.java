@@ -1,4 +1,4 @@
-package pack;
+package pack01;
 
 public class Student2 {
 	static int count;

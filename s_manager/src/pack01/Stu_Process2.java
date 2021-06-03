@@ -1,4 +1,4 @@
-package pack;
+package pack01;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -55,13 +55,14 @@ public class Stu_Process2 {
 		System.out.print(s.eng+"\t");
 		System.out.print(s.math+"\t");
 		System.out.print(s.total+"\t");
-		System.out.printf("%.2f",s.avg); 
+		System.out.printf("%.2f \t",s.avg); 
 		System.out.println(s.rank+"\n");
 		
 		}
 	}//2.출력
 
 	
+	//3.수정
 	void stu_update(ArrayList list) {
 		System.out.println("수정할 이름 입력");
 		String update_name = scan.next();
@@ -95,7 +96,7 @@ public class Stu_Process2 {
 			s.total = s.kor+s.eng+s.math;
 			s.avg = s.total/3.0;
 		}
-	}
+	}//3.수정
 	
 	//4.검색
 	void stu_search(ArrayList list) {
@@ -111,7 +112,8 @@ public class Stu_Process2 {
 				System.out.print(s.kor+"\t");
 				System.out.print(s.eng+"\t");
 				System.out.print(s.math+"\t");
-				System.out.printf("%.2f",s.avg); 
+				System.out.print(s.total+"\t");
+				System.out.printf("%.2f \t",s.avg); 
 				System.out.println(s.rank+"\n");
 			}
 		}

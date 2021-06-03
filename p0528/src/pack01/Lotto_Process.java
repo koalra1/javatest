@@ -13,6 +13,7 @@ public class Lotto_Process {
 	
 	void lotto_random(int[]ball) {
 		int temp = 0;
+		
 		for(int i=0; i<500; i++) {
 			int random = (int)(Math.random()*45)+1;
 			temp = ball[0];

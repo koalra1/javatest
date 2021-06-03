@@ -28,7 +28,11 @@ public class Ex0528_02 {
 				p.lotto_random(ball);
 				break;
 			case 3:
-				
+//				for(int i=0; i<7;i++) {
+//					System.out.println("6개 번호를 입력하세요");
+//					int input = scan.nextInt();
+//					ball[i] = input;
+//				}
 				break;
 			case 4:
 				break;
