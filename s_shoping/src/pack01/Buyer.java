@@ -13,6 +13,16 @@ public class Buyer {
 	private int money = 1000;
 	private int point = 0;
 
+	
+	
+	void main() {
+		System.out.println("[쇼핑몰]");
+		System.out.println("1.TV구매");
+		System.out.println("2.SmartPhone구매");
+		System.out.println("3.Computer구매");
+		System.out.println("4.구매내역 확인");
+		System.out.println("5.잔액충전");
+	}
 	void buy(Product p) {
 		if (money < p.getPro_price()) {
 			System.out.println("잔액이 부족합니다.");
@@ -45,15 +55,16 @@ public class Buyer {
 		System.out.println("총 구매금액 : "+sum);
 	}
 	
-//	void cash() {
-//		
-//			System.out.println("충전할 금액 입력");
-//			int check = scan.nextInt();
-//			check = check+money;
-//			
-//			System.out.println(check+"이 충전 완료");
-//		
-//	}
+	void cash() {
+			int cash1 = 0;
+			System.out.println("충전할 금액 입력");
+			int check = scan.nextInt();
+			cash1 = check+getMoney();
+			setMoney(cash1);
+			System.out.println(check+"이 충전 완료");
+			System.out.println("현재 잔액:"+cash1);
+		
+	}
 	
 	
 	

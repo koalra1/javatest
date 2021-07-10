@@ -10,7 +10,7 @@ public class StuManager2 {
 		// 1.Student2
 		// 2.Stu_Process2
 		// 학생성적프로그램
-		ArrayList list = new ArrayList();
+		ArrayList<Student2> list = new ArrayList<Student2>();
 		Stu_Process2 p = new Stu_Process2();
 	
 		while(true) {
